@@ -5,15 +5,18 @@ import {
   ElementRef,
   AfterViewInit,
 } from '@angular/core';
-import { fromEvent, Observable, of } from 'rxjs';
 import {
+  fromEvent,
+  Observable,
+  of,
   map,
   debounceTime,
   distinctUntilChanged,
   switchMap,
   tap,
   toArray,
-} from 'rxjs/operators';
+} from 'rxjs';
+
 import { Item } from './observableInt.interface';
 
 @Component({
